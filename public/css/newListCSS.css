@@ -1,0 +1,366 @@
+@font-face {
+    font-family: arrows;
+    src:url("../font/iconfont.eot");
+    src:url("../font/iconfont.ttf");
+    src:url("../font/iconfont.woff");
+}
+#header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 120px;
+    background: #fff;
+    z-index: 3;
+}
+/*banner*/
+#banner{
+    width: 1349px;
+    height: 281px;
+    background-image: url("../images/banner.jpg");
+    position: fixed;
+    left: 0px;
+    top: 120px;
+    z-index: 1;
+}
+/*占位*/
+#placeholder{
+    width: 1349px;
+    height: 401px;
+}
+/*-------------------------------------*/
+/*内容的头部介绍*/
+#contentOne{
+    position: relative;
+    z-index: 2;
+    width: 1349px;
+    background-color: #ffffff;
+    padding-top: 1px;
+}
+#introduce{
+    width: 1349px;
+    height: 115px;
+    background-color: #f0f0f0;
+    margin-top: 14px;
+    padding-top: 1px;
+}
+#golden{
+    width: 33px;
+    height: 33px;
+    transform: rotate(45deg);
+    background-color: #c1b497;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -33px;
+}
+#transfer{
+    text-align: center;
+    margin-top: -23px;
+    position: relative;
+    z-index: 2;
+}
+#transfer{
+    font-family: arrows;
+}
+#introduceWenzi{
+    font-family:"Microsoft yahei";
+    font-size: 16px;
+    color: #32302f;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 35px;
+}
+/*----------------------------------*/
+/*产品展示*/
+#newBag{
+    font-family:"Microsoft yahei";
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 10px;
+}
+#product{
+    width: 1349px;
+    background-image: url("../images/backgroundTu.jpg");
+    overflow: hidden;
+}
+/*板块1样式*/
+#list{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1304px;
+    overflow: hidden;
+}
+#list ul li{
+    float: left;
+    list-style: none;
+    margin: 15px 9px;
+    width: 302px;
+    height: 427px;
+    background-color: #ffffff;
+    border: 3px #e4e0da solid;
+    overflow: hidden;
+    cursor: pointer;
+}
+#list ul li img{
+    width: 302px;
+    height: 427px;
+}
+#list ul li div{
+    background-color: #1c1c1f;
+    width: 302px;
+    height: 57px;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 2;
+    line-height: 57px;
+}
+#list ul li div p{
+    color: #ffffff;
+    font-family:"Microsoft yahei";
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/*板块2样式*/
+#list2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1304px;
+    overflow: hidden;
+    margin-top: 400px;
+    transition: all 0.4s linear;
+}
+#list2 ul li{
+    float: left;
+    list-style: none;
+    margin: 15px 9px;
+    width: 302px;
+    height: 427px;
+    background-color: #ffffff;
+    border: 3px #e4e0da solid;
+    overflow: hidden;
+    cursor: pointer;
+}
+#list2 ul li img{
+    width: 302px;
+    height: 427px;
+}
+#list2 ul li div{
+    background-color: #1c1c1f;
+    width: 302px;
+    height: 57px;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 2;
+    line-height: 57px;
+}
+#list2 ul li div p{
+    color: #ffffff;
+    font-family:"Microsoft yahei";
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/*板块3样式*/
+#list3{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1304px;
+    overflow: hidden;
+    margin-top: 400px;
+    transition: all 0.4s linear;
+}
+#list3 ul li{
+    float: left;
+    list-style: none;
+    margin: 15px 9px;
+    width: 302px;
+    height: 427px;
+    background-color: #ffffff;
+    border: 3px #e4e0da solid;
+    overflow: hidden;
+    cursor: pointer;
+}
+#list3 ul li img{
+    width: 302px;
+    height: 427px;
+}
+#list3 ul li div{
+    background-color: #1c1c1f;
+    width: 302px;
+    height: 57px;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 2;
+    line-height: 57px;
+}
+#list3 ul li div p{
+    color: #ffffff;
+    font-family:"Microsoft yahei";
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/*移动*/
+/*板块1*/
+#list ul li:nth-of-type(1):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(2):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(3):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(4):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(5):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(6):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(7):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(8):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(9):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(10):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(11):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(12):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(13):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(14):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(15):hover div{
+    margin-top: -60px;
+}
+#list ul li:nth-of-type(16):hover div{
+    margin-top: -60px;
+}
+
+/*板块2*/
+#list2 ul li:nth-of-type(1):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(2):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(3):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(4):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(5):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(6):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(7):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(8):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(9):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(10):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(11):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(12):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(13):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(14):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(15):hover div{
+    margin-top: -60px;
+}
+#list2 ul li:nth-of-type(16):hover div{
+    margin-top: -60px;
+}
+
+/*板块3*/
+#list3 ul li:nth-of-type(1):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(2):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(3):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(4):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(5):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(6):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(7):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(8):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(9):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(10):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(11):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(12):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(13):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(14):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(15):hover div{
+    margin-top: -60px;
+}
+#list3 ul li:nth-of-type(16):hover div{
+    margin-top: -60px;
+}
+
+/*页尾*/
+#footer{
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    padding-top: 70px;
+}

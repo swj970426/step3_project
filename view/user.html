@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <%- include('./header.html') %>
+    <h1>用户列表</h1>
+    <% for(var i=0;i<userList.length;i++){%>
+    <!--html要写在尖括号外面-->
+        <p><%= userList[i].userName %></p>
+    <%} %>
+    <%- include('./footer.html') %>
+</body>
+</html>

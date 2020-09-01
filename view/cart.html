@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+</head>
+<body>
+<div id="container">
+    <!-- 头部-->
+    <%- include("./header.html")%>
+    <!-- 内容-->
+    <div>
+        <div id="contentTop">
+            <div id="wenzi1">
+                LITTLE BAG
+            </div>
+            <div id="wenzi2">
+                购物车
+            </div>
+        </div>
+        <div id="cartProduct">
+            <table>
+                <thead>
+                <tr>
+                    <td><input type="checkbox" id="checkAll"></td>
+                    <td></td>
+                    <td>商品名</td>
+                    <td>数量</td>
+                    <td>价格</td>
+                    <td>小计</td>
+                    <td>删除</td>
+                </tr>
+                </thead>
+                <tbody id="tbProduct">
+                <% for(i=0;i<productList.length;i++){%>
+                <tr>
+                    <td><input type="checkbox" data-sid="<%= productList[i].sid%>"></td>
+                    <td><img src="<%= productList[i].feng%>" alt=""></td>
+                    <td><%= productList[i].title%></td>
+                    <td><%= productList[i].num%></td>
+                    <td><%= productList[i].price%></td>
+                    <td class="sub"><%= productList[i].num * productList[i].price%></td>
+                    <td><span class="del" data-rid="<%= productList[i].rid%>">删除</span></td>
+                </tr>
+                <%} %>
+                </tbody>
+            </table>
+        </div>
+
+        <hr/>
+        <div id="contentBottom">
+            <div id="contentBottomOne">
+                总计: $ <span id="spanTotal">0</span>
+            </div>
+            <div id="contentBottomTwo">
+                现在结算
+            </div>
+        </div>
+    </div>
+    <%- include("./footer.html")%>
+</div>
+</div>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script src="js/jquery.3.4.0.js"></script>
+<script type="text/javascript">
+    $("#tbProduct").on('change',"input[type='checkbox']",function(){
+        /*1.判断checkbox是选中，还是取消
+        * 2.获取总金额
+        * 3.选中，原来的总金额上，进行加，否进行减
+        * 4.新的总金额，显示在页面上
+        * attr:html标签上的属性  prop:dom对象的属性
+        * */
+        var checked =  $(this).prop("checked");
+        var total = Number($("#spanTotal").text());
+        var sub = Number($(this).parent().parent().find(".sub").text());
+        if(checked){
+            total += sub;
+        }else{
+            total -= sub;
+        }
+        $("#spanTotal").text(total);
+        //是否选中全选
+        // 有一个没有选中，就全选按钮就不能选中
+        var checkArr = $("#tbProduct input[type='checkbox']");
+        var all = true;
+        for(var i=0;i<checkArr.length;i++) {
+            if(!$(checkArr[i]).prop('checked')){
+                //如果有一个是false
+                all=false;
+                break;
+            }
+        }
+        $("#checkAll").prop('checked',all);
+    })
+
+    $("#checkAll").click(function(){
+        var checked = $(this).prop('checked');
+        var checkArr = $("#tbProduct input[type='checkbox']");
+        for(var i=0;i<checkArr.length;i++){
+            var nowCheck = $(checkArr[i]).prop('checked');
+            if(nowCheck!=checked){
+                $(checkArr[i]).prop('checked',checked);
+                $(checkArr[i]).change();
+            }
+        }
+    })
+
+    $("#contentBottomTwo").click(function(){
+        //用户选中的商品，获取对应的rid
+        //得到checkbox的checked属性为true的这些元素
+        var checkedArr = $("#tbProduct input[type='checkbox']:checked");
+        var sid = [];
+        for(var i=0;i<checkedArr.length;i++){
+            sid.push($(checkedArr[i]).attr("data-sid"));
+        }
+        var sidstr = sid.join(",");
+
+        //把rid传给服务器进行处理
+        $.ajax({
+            type:'post',
+            url:'/buildOrder',
+            data:"sidstr="+sidstr+"&total="+$("#spanTotal").text(),
+            success:function(data){
+                //200 跳转到详情页
+                //201 没有登录，跳到首页
+                //其他就提示
+                console.log(data);
+                alert(data.message);
+            }
+        })
+    })
+</script>
+</body>
+</html>

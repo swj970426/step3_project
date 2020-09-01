@@ -1,0 +1,180 @@
+#container{
+    width: 1349px;
+    height: 1245px;
+}
+#header{
+    height: 120px;
+    background: #fff;
+}
+#content{
+    width: 1349px;
+    height: 760px;
+}
+#userM{
+    width: 160px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#userM>div{
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#userM>div>div{
+    width: 160px;
+    height: 160px;
+}
+#userM>p{
+    font-family: "Microsoft yahei";
+    font-size: 14px;
+    text-align: center;
+}
+/*用户管理内容*/
+#manage{
+    width: 1210px;
+    height: 582px;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#manage>hr:nth-of-type(1){
+    width: 1210px;
+    height: 2px;
+    border: none;
+    background: #ebe2d6;
+}
+#manage>div{
+    float: left;
+}
+#manage>div:nth-of-type(1){
+    width: 195px;
+    height: 483px;
+}
+#manage>hr:nth-of-type(2){
+    width: 1px;
+    height: 580px;
+    border: none;
+    background: #ebe2d6;
+    float: left;
+}
+#manage>div:nth-of-type(2){
+    width: 1014px;
+    height: 580px;
+}
+.manageList>li{
+    width: 195px;
+    /*height: 45px;*/
+    overflow: hidden;
+    cursor: pointer;
+}
+.manageList>li:nth-of-type(1){
+    margin-top: 0px;
+}
+.manageList>li>h4{
+    width: 195px;
+    height: 45px;
+    background-color: #c8a985;
+    color: #fff;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+}
+.manageList>li>ul{
+   font-size: 18px;
+    color: #c8a985;
+}
+.manageList>li:nth-of-type(1)~li{
+    margin-top: 7px;
+    /*height: 45px;*/
+    /*overflow: hidden;*/
+}
+/*用户管理显示*/
+#manage>div:nth-of-type(2)>ul{
+    width: 894px;
+    height: 188px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgba(128,128,128,0.2);
+}
+#manage>div:nth-of-type(2)>ul>li{
+    width: 100px;
+    height: 15px;
+    font-family: "Microsoft yahei";
+    font-size: 14px;
+    color: #393939;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 0px;
+    float: left;
+    margin-left: 40px;
+}
+#manage>div:nth-of-type(2)>ul>li>img{
+    vertical-align: middle;
+    float: left;
+}
+#manage>div:nth-of-type(2)>ul>li>span{
+    float: right;
+}
+#manage>div:nth-of-type(2)>ul>li:nth-of-type(5)~li{
+    height: 116px;
+    line-height: 116px;
+    margin-top: 39px;
+}
+#manage>div:nth-of-type(2)>ul>li:nth-of-type(1),#manage>div:nth-of-type(2)>ul>li:nth-of-type(6){
+    width: 250px;
+    margin-left: 60px;
+}
+/*个人账户*/
+.manageList>li:nth-of-type(1)>ul{
+    width: 195px;
+    height: 139px;
+}
+/*账户管理*/
+.manageList>li:nth-of-type(2)>ul{
+    width: 195px;
+    height: 107px;
+}
+/*售后服务*/
+.manageList>li:nth-of-type(3)>ul{
+    width: 195px;
+    height: 139px;
+}
+.manageList>li>ul>li{
+    width: 73px;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid rgba(230,216,199,0.45);
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer{
+    margin-top: 80px;
+}
+/*添加JS动效*/
+.userManageClick{
+    width: 195px;
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.userManageClick1{/*点击放下后*/
+    height: 188px;
+    overflow: visible;
+    -webkit-transition: all 1s linear;
+}
+.userManageClick2{/*点击放下后*/
+    height: 153px;
+    overflow: visible;
+    -webkit-transition: all 1s linear;
+}
+.userManageClick3{/*点击放下后*/
+    height: 119px;
+    overflow: visible;
+    -webkit-transition: all 1s linear;
+}

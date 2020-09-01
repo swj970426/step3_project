@@ -1,0 +1,177 @@
+#header{
+    width: 1349px;
+    height: 91px;
+}
+#content{
+    width: 1349px;
+    height: 560px;
+    background-color: #e9e9e8;
+    margin-top: 30px;
+    overflow: hidden;
+}
+#contentTop{
+    width: 960px;
+    height: 60px;
+    background-color: white;
+    margin-top: 32px;
+    margin-left: auto;margin-right: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+#wenzi1{
+    color: #dac99c;
+    font-size: 14px;
+    line-height: 60px;
+    float: left;
+    margin-left: 18px;
+    font-family:"Microsoft yahei";
+}
+#wenzi2{
+    font-size: 14px;
+    float: left;
+    line-height: 60px;
+    margin-left: 5px;
+    font-family:"Microsoft yahei";
+}
+#contentTopOne{
+    width: 960px;
+    height: 40px;
+    margin-left: auto;margin-right: auto;
+}
+#contentTopWen{
+    line-height: 40px;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family:"Microsoft yahei";
+    font-size: 14px;
+}
+#span1{
+    margin-left: 350px;
+
+}
+.span2{
+    margin-left: 115px;
+}
+#contentMiddom{
+    width: 960px;
+    height: 350px;
+    border-radius: 0px 0px 20px 20px ;
+    margin-left: auto;margin-right: auto;
+    background-color: white;
+}
+#contentMiddomOne{
+    width: 960px;
+    height: 115px;
+    margin-top: 10px;
+}
+#contentMiddomOne input{
+    width: 15px;
+    height: 15px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 20px;
+}
+#middonOne{
+    float: left;
+    margin-left: 26px;
+    font-size: 14px;
+    font-family:"Microsoft yahei";
+}
+#middonOne img{
+    vertical-align: middle;
+}
+#middomFive,#middomFour,#middomThree,#middomTwo{
+    display: inline-block;
+    font-size: 14px;
+    font-family:"Microsoft yahei";
+    line-height: 115px;
+}
+#middomTwo{
+    margin-left: 155px;
+}
+#middomThree{
+    margin-left: 100px;
+}
+#middomFour{
+    margin-left: 110px;
+}
+#middomFive{
+    margin-left: 80px;
+}
+#contentMiddomTwo{
+    width: 960px;
+    height: 21px;
+    margin-top: 40px;
+}
+#middonOne1{
+    float: left;
+    margin-left: 46px;
+    font-size: 14px;
+    font-family:"Microsoft yahei";
+}
+#middomFive1,#middomFour1,#middomThree1,#middomTwo1{
+    display: inline-block;
+    font-size: 14px;
+    font-family:"Microsoft yahei";
+    line-height: 21px;
+}
+#middomTwo1{
+    margin-left: 255px;
+}
+#middomThree1{
+    margin-left: 115px;
+}
+#middomFour1{
+    margin-left: 125px;
+}
+#middomFive1{
+    margin-left: 117px;
+}
+.middonOne1{
+    width: 40px;
+    height: 20px;
+    background-color: #ccb36e;
+    color: white;
+    text-align: center;
+    float: left;
+}
+.middonOne2{
+    float: left;
+}
+#contentMiddom hr{
+    margin-top: 40px;
+    height: 1px;
+    background-color:#74777b;
+    border: none;
+}
+#contentBottom{
+    width: 890px;
+    height: 50px;
+    margin-left: auto;margin-right: auto;
+    margin-top: 20px;
+}
+#contentBottomOne{
+    display: inline-block;
+    font-size: 18px;
+    font-family:"Microsoft yahei";
+    line-height: 50px;
+}
+#contentBottomTwo{
+    width: 145px;
+    height: 50px;
+    background-color: #ccb36e;
+    display: inline-block;
+    font-size: 18px;
+    font-family:"Microsoft yahei";
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    margin-left:612px;
+}
+/*swj add by 2020/8/31*/
+#cartProduct{
+    width: 800px;
+    margin: 0 auto;
+}
+/*end*/
+
+

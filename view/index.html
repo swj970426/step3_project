@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/remenliebiao.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--段雨薇首页整体页面布局 HTML+CSS-->
+<div id="container">
+    <%- include("./header.html")%>
+    <!-- 内容部分-->
+    <div id="content">
+        <!-- banner王波轮播-->
+        <div id="banner">
+            <div id="conten">
+                <div id="leftBox"></div>
+                <div id="righBox"></div>
+                <div id="contenttext"></div>
+                <div id="div4">
+                    <input type="button" value="" onclick="moveImg(0,true)"/>
+                    <input type="button" value="" onclick="moveImg(1,true)"/>
+                    <input type="button" value="" onclick="moveImg(2,true)"/>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播结束-->
+        <h2>autumn&nbsp;/&nbsp;winter&ensp;2016</h2>
+        <p>热门新品</p>
+        <!-- 热门新品-->
+        <ul id="newList">
+            <!-- 王帅哥做的动效 div1 div2 是王帅哥加的-->
+            <%
+            for(var i=0;i<newList.length;i++){%>
+            <li class="div1">
+                <img src="<%=newList[i].feng %>" alt="这是我从数据库取出来的"/>
+                <div class="div2">
+                    <h3><a href="productDetail.html?id=<%=newList[i].rid %>">
+                        <%=newList[i].title %></a></h3>
+                    <p><%- newList[i].summary %></p>
+                </div>
+            </li>
+            <%}%>
+
+            <!-- 王帅哥动效完了-->
+        </ul>
+        <!-- 经典部分-->
+        <!-- 王帅哥的特效部分-->
+        <div id="containe"></div>
+        <!-- 特效结束-->
+        <ul id="fList">
+            <li>
+                <ul id="upList">
+                    <li>
+                        <div><img src="images/hFove1.jpg"   id="upListOne" alt="这是永恒经典页面"/></div>
+                        <p>caissa-hobo-手袋，黑色N41556</p>
+                    </li>
+                    <li>
+                        <div><img src="images/hFover2.jpg" id="upListTwo" alt="这是永恒经典页面"/></div>
+                        <p>ANTIGONA手袋，裸色粒面皮革</p>
+                    </li>
+                    <li>
+                        <div><img src="images/hFover3.jpg" id="upListThree" alt="这是永恒经典页面"/></div>
+                        <p>PANDORA硬壳包，浅金色蛇皮</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul id="downList">
+                    <li>
+                        <div><img src="images/hFover4.jpg" id="downListOne" alt="这是永恒经典页面"/></div>
+                        <p>Michael Kors MK迷你笑脸包</p>
+                    </li>
+                    <li>
+                        <div><img src="images/hFover5.jpg"  id="downListTwo" alt="这是永恒经典页面"/></div>
+                        <p>PANDORA香风包，浅金牛皮</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 首页关于我们-->
+        <div id="aboutU">
+            <img src="images/hAbout.jpg" alt="这是关于我们的引导页"/>
+            <p>品质传承&ensp;&ensp;始终如一</p>
+            <p><a href="#">About&ensp;little&ensp;bag&ensp;&gt;&gt;</a></p>
+        </div>
+        <div id="aboutDet">
+            <div><img src="images/hM1976.jpg" alt="这是首页关于我们的图片"/></div>
+            <div>
+                <h3>始于1976<br/>
+                    只为臻献非凡</h3>
+                <p>LITTLEBAG品牌重整全球渠道，<br/>
+                    即将开创新纪元。<br/>
+                    <br/>
+                    设计师们瞄准全球职业女性，<br/>
+                    使产品变得更加现代 、<br/>
+                    年轻并更富时代感。<br/>
+                    <br/>
+                    1976年立足于世界时尚中心，<br/>
+                    进入了一个动态增长的时代。</p>
+            </div>
+        </div>
+    </div>
+    <%- include("./footer.html")%>
+    <!------------------------登录注册-宋玉婷----------------->
+    <div id="Box">
+        <!--登录-->
+        <!--<form action="#" method="get">-->
+        <div id="loginBox">
+            <form id="LoginForm">
+                <img src="images/loginimg/logo1.jpg" class="logo1">
+                <img src="images/loginimg/guanbi.jpg" class="close" onclick=close1();>
+                <p class="txt1">登录</p>
+                <p class="switch" onclick=switchZhuce();>切换注册</p>
+                <p>
+                    <input type="text" name="user" id="loginUser" placeholder="&nbsp; 请输入用户名或邮箱">
+                    <img src="images/loginimg/user.jpg" class="pic1"><span class="red">*</span>
+                </p>
+                <p>
+                    <input type="password" name="password" id="loginPwd" placeholder="&nbsp; 请输入密码">
+                    <img src="images/loginimg/pass.jpg" class="pic2"><span class="red">*</span>
+                </p>
+                <p>
+                    <input type="checkbox" checked="checked" id="check"><p class="rember">记住我</p>
+                </p>
+                <p class="forget">忘记密码？</p>
+                <p>
+                    <input type="button" value="登录" name="loginBtn" id="loginBtn">
+                </p>
+            </form>
+        </div>
+        <!--</form>-->
+
+        <div id="zhuceBox">
+            <img src="images/loginimg/logo1.jpg" class="logo1">
+            <img src="images/loginimg/guanbi.jpg" class="close" onclick=close1();>
+            <p class="txt1">注册</p>
+            <p class="switch" onclick=switchLogin();>切换登录</p>
+
+            <form id="frmReg">
+                <input type="text" name="Email" id="Email" placeholder="&nbsp; 请输入常用邮箱"><span class="red">*</span>
+                <img src="images/loginimg/mail.jpg" class="pic1">
+                <input type="text" name="user" id="zhuceUser" placeholder="&nbsp; 请设置用户名"><span class="red">*</span>
+                <img src="images/loginimg/user.jpg" class="pic2">
+                <input type="password" name="zhucePwd" id="zhucePwd" placeholder="&nbsp; 请设置密码">
+                <img src="images/loginimg/pass.jpg" class="pic3">
+                <input type="password" name="resPwd" id="resPwd" placeholder="&nbsp; 请再次输入密码">
+                <img src="images/loginimg/repass.png" class="pic4">
+                <input type="button" value="注册" name="zhuceBtn" id="zhuceBtn">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.3.4.0.js"></script>
+<script src="plugs/layui/layui.all.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script src="js/delaunay.js"></script>
+<script type="text/javascript" src="js/TweenMax.js"></script>
+<script type="text/javascript" src="js/boli.js"></script>
+<script src="js/lunbo.js"></script>
+<script src="js/yonghengjingdian.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript">
+    var obj = <%- JSON.stringify(lunbo)%>
+    imgArr=[];
+    for(var i=0;i<obj.length;i++){
+        imgArr.push(obj[i].ImagePath);
+    }
+    console.log(imgArr);
+    init()/*初始化*/
+</script>
+</body>
+</html>

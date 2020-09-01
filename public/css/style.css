@@ -1,0 +1,224 @@
+/*段雨薇*/
+*{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+/*swj add by 2020/8/30 start*/
+.userHead{
+    width:32px;
+    height: 32px;
+    border-radius: 32px;
+    vertical-align: middle;
+}
+/*end*/
+/*doubleyong add by 2020/4/27 start*/
+#container{
+    width: 1349px;
+    margin: 0 auto;
+}
+.red{
+    color:red;
+}
+.hide{
+    display: none;
+}
+/*doubleyong add by 2020/4/27 end*/
+/*最外面的大容器*/
+
+/*头部*/
+#header{
+    width: 1349px;
+    height: 120px;
+}
+/*登录注册部分*/
+#barTop{
+    width: 1349px;
+    height: 39px;
+    background-color:#393938;
+    font-family:"Microsoft yahei";
+    font-size: 14px;
+    color: white;
+    overflow: hidden;
+}
+#barTop>div{
+    width: 1245px;
+    height: 14px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wel{
+    width: 186px;
+    height: 14px;
+    float: left;
+    font-size: 14px;/*12px待定*/
+    text-transform: uppercase;
+}
+#rightL{
+    width: 229px;
+    height: 14px;
+    float: right;
+}
+#user{
+    float: left;
+}
+#user>span:nth-of-type(1),#user>span:nth-of-type(3){
+    cursor: pointer;
+}
+#user>span:nth-of-type(2),#user>span:nth-of-type(3){
+    margin-left: 15px;
+}
+#cart{
+    float: right;
+    cursor: pointer;
+}
+/*导航条和Logo*/
+#nav{
+    width: 695px;
+    height: 34px;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Microsoft yahei";
+    font-size:16px;
+}
+#nav>li{
+    float: left;
+}
+#nav>li:nth-of-type(2),#nav>li:nth-of-type(5){
+    margin-left: 52px;
+}
+#nav>li:nth-of-type(3),#nav>li:nth-of-type(4){
+    margin-left: 66px;
+}
+li:nth-child(1),li:nth-child(2),li:nth-child(4),li:nth-child(5){
+    margin-top: 16px;
+}
+#nav>li>a{
+    color: #5d5b59;
+}
+
+
+/*尾部*/
+#footer{
+    width: 1349px;
+    height: 288px;
+    margin-top: 36px;
+}
+hr{
+    height: 2px;
+    color: #322f2f;
+}
+/*购买细节*/
+#service{
+    width: 1202px;
+    height: 137px;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Microsoft yahei";
+}
+#service>ul>li{
+    float: left;
+    margin-top: 0px;
+    font-size: 14px;
+}
+#serDet{
+    width: 822px;
+    height: 137px;
+    float: left;
+}
+#serDet>li>p:nth-of-type(1){
+    margin-top: 10px;
+}
+#serDet>li>p:nth-of-type(1)~p{
+    margin-top: 11px;
+}
+#serDet>li:nth-of-type(2){
+    margin-left: 97px;
+}
+#serDet>li:nth-of-type(3){
+    margin-left: 111px;
+}
+#serDet>li:nth-of-type(4){
+    margin-left: 108px;
+}
+#serDet>li:nth-of-type(5){
+    margin-left: 115px;
+}
+#serDet>li>h4{
+    color: #262524;
+}
+#serDet>li>p a,#appE>li>p a{
+    color: #5d5b59;
+}
+#appE{
+    width: 249px;
+    height: 137px;
+    float: right;
+}
+#appE li:nth-of-type(1){
+    float: left;
+}
+#appE li:nth-of-type(2){
+    float: right;
+}
+#appE li>p{
+    font-size: 14px;
+    color: #5d5b59;
+    margin-top: 10px;
+}
+#appE li>div:nth-of-type(1){
+    width: 93px;
+    height: 92px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#appE li>div:nth-of-type(2){
+    width: 92px;
+    height: 92px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*版权*/
+#copyright{
+    width: 1349px;
+    height: 53px;
+    background-color: #322f2f;
+    margin-top: 65px;
+}
+#copyright>p{
+    font-family: "Microsoft yahei";
+    font-size: 14px;
+    line-height: 53px;
+    color: #fdfdfd;
+    margin-left: 52px;
+}
+
+/*字体*/
+@font-face {
+    font-family: "fontPicture1";
+    src: url("../fonts/iconfont.ttf"),
+         url("../fonts/iconfont.eot"),
+         url("../fonts/iconfont.woff")
+}
+#backUp{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+    font-family: "fontPicture1";
+    color: #c8a985;
+    position: fixed;
+    top: 600px;
+    left: 1230px;
+}
+#backUp:hover{
+    cursor: pointer;
+    color: rgba(200,183,152,0.8);
+    background-color: rgba(255,255,255,0.1);
+}

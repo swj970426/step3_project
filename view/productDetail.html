@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+</head>
+<body>
+<!--段雨薇详情页面的整体布局-->
+<div id="container">
+    <%- include("./header.html")%>
+    <div id="content">
+        <!-- 整体介绍页面-->
+        <div id="leftContent">
+            <div>
+                <h3><%= info.title %></h3>
+                <hr/>
+                <!-- 购买引导-->
+                <div id="buy">
+                    <p>¥<%= info.price %></p>
+                    <input type="button" value="立即购买"/>
+                </div>
+                <!-- 收藏引导-->
+                <div id="add">
+                    <input type="button" value="&nbsp;&nbsp;&nbsp;&nbsp;收藏" id="collect"/><!-- 添加星标-->
+                    <input type="button" value="添加至我的购物车" data-id="<%= info.rid %>" id="buyCart"/>
+                </div>
+                <span>&#xe616;</span>
+                <hr/>
+                <ul id="detailS">
+                    <li><span>&#xe60e;</span>详细特征</li><!-- 添加向下按钮-->
+                    <li><%= info.size %></li>
+                    <li>
+                        <%- info.summary %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 女包细节介绍 <img src="images/detailBG.jpg" alt="这是详情页的背景"/>-->
+        <div id="rightContent">
+            <!--<div></div>-->
+            <%- info.detail %>
+        </div>
+    </div>
+    <%- include("./footer.html")%>
+</div>
+<script src="js/jquery.3.4.0.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/detail.js"></script>
+</body>
+</html>
